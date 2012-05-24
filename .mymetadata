@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="DTInterface"
+  id="myeclipse.1314683698376"
+  context-root="/DTIterface"
+  j2ee-spec="5.0"
+  archive="DTInterface.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

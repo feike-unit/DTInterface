@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- 任务一 
+	<bean id="testScheduler"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="testService" />
+		<property name="targetMethod" value="updateFqztByScheduler" />
+	</bean>
+	<bean id="testSchedulerTrigger"
+		class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="testScheduler" />
+		<property name="cronExpression" value="0 0/3 * * * ?" />
+	</bean>
+	-->
+	<!-- 每3分钟刷新一次 -->
+	
+	<!-- 调度开始 -->
+	<bean
+		class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<!-- <ref local="testSchedulerTrigger" /> -->
+			</list>
+		</property>
+	</bean>
+
+
+</beans>
